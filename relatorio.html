@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Veículos - Lavação Gomes</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    </head>
+<body>
+    
+    <div class="main-container">
+        <header>
+            <h1>Relatório de Veículos Cadastrados</h1>
+            <p>Os dados são carregados de forma assíncrona utilizando AJAX.</p>
+        </header>
+
+        <div id="status-message" class="loading-message">
+            Carregando dados dos veículos... Por favor, aguarde.
+        </div>
+
+        <div class="table-container">
+            <table id="tabela-veiculos" class="styled-table hidden">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Placa</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-veiculos-body">
+                    </tbody>
+            </table>
+        </div>
+        
+        <div class="text-center">
+            <a href="index.html" class="btn-voltar">
+                ← Voltar ao Menu Principal
+            </a>
+        </div>
+    </div>
+
+    <script src="recebe-dados.js"></script>
+    <script>
+        // Inicia o carregamento dos dados assim que a página estiver pronta
+        document.addEventListener('DOMContentLoaded', function() {
+            // Chama a função principal definida em recebe-dados.js
+            carregarRelatorioVeiculos(); 
+        });
+    </script>
+</body>
+</html>

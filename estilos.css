@@ -1,0 +1,112 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #f1f5f9; /* Azul claro/cinza */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo principal horizontalmente */
+    min-height: 100vh;
+}
+
+/* Contêiner Principal para Centralização */
+.main-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #1d4ed8;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Estilização da Tabela Conforme Requisito */
+.table-container { 
+    max-width: 100%; 
+    overflow-x: auto;
+}
+.styled-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 25px 0;
+    font-size: 0.9em;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15); /* Sombra mais profunda */
+    border-radius: 12px;
+    overflow: hidden; /* Garante que os cantos arredondados sejam aplicados */
+}
+.styled-table thead tr {
+    background-color: #1d4ed8; /* Azul Escuro Vívido */
+    color: #ffffff;
+    text-align: left;
+    font-weight: 700;
+}
+.styled-table th,
+.styled-table td {
+    padding: 14px 18px;
+    border-right: 1px solid #e5e7eb; /* Borda clara entre colunas */
+}
+.styled-table th:last-child,
+.styled-table td:last-child {
+    border-right: none;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background-color: #ffffff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f0f8ff; /* Azul claro no zebrado */
+}
+.styled-table tbody tr:last-of-type {
+    border-bottom: 3px solid #1d4ed8;
+}
+.styled-table tbody tr:hover {
+    background-color: #dbeafe; /* Azul claro no hover */
+    transform: scale(1.005);
+    cursor: pointer;
+}
+
+/* Estilização da mensagem de status */
+.loading-message {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4b5563;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo do Botão Voltar */
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #64748b; /* Cinza suave */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-voltar:hover {
+    background-color: #4b5563;}
