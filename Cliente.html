@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Cliente</title>
+</head>
+
+<body>
+
+ <h1> Cadastro de Cliente </h1>
+    
+ <form action="recebe-dados.php" method="post">
+
+ <fieldset>
+
+  <legend> Dados Cadastrais do Cliente </legend> 
+  <label>  Nome do cliente:  </label>
+  <input type="text" name = "nomeCliente" id = "nomeCliente" autofocus> <label id="mensagem"></label> <br> <br>
+    
+
+  <label>  Endereço:  </label>
+  <input type="text" name = "endereco">
+  <label>  Nº:  </label>
+  <input type="text" name = "numero"> <br> <br>
+
+  <label> Email do usuário: </label>
+  <input type="email" name = "email"> <br> <br>
+
+  <label> Celular: </label>
+  <input type="tel" name = "telefone"> <br> <br>
+
+  <label> Nome de Usuário: </label>
+  <input type="text" name ="user"> <br> <br> <br>
+
+  <label> Cadastre uma senha: </label>
+  <input type="password" min="6" max="15" name = "pass"> <br> <br>
+  
+  <button name ="cadastrarCliente" id = "cadastrarCliente"> cadastrar cliente </button>
+
+ </fieldset>
+
+ </form>
+
+    <a href="index.html"> <button> Voltar</button></a> <br> <br> <br> <br>
+
+
+ <script src="valida-form.js"></script>
+</body>
+</html>
